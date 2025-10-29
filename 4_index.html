@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="main">
+        Js in HTML
+    </div>
+
+
+
+    <button>Show Alert + Remove Div INDEX 2</button>
+
+    <div style="color: red;">DIV 1</div>
+    <div style="color: blue;">DIV 2</div>
+
+
+    <script>
+        console.log("Hello G56");
+
+        document.getElementById("main").innerHTML = "<b> I LOVE JavaScript! </b>";
+
+        document.getElementsByTagName("div")[1].innerHTML  = "<b> Test </b>";
+        document.getElementsByTagName("div")[1].style.color = "green";
+
+        const paragraphElement = document.createElement("p");
+        paragraphElement.innerHTML = "This is a paragraph!";
+
+        document.getElementById("main").appendChild(paragraphElement);
+
+
+        // https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
+        const button = document.querySelector("button");
+
+        button.setAttribute("disabled", "");
+        button.removeAttribute("disabled");
+
+
+    </script>
+
+    <script src="4_index.js"></script>
+
+    
+</body>
+</html>
